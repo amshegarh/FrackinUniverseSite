@@ -63,6 +63,7 @@ class Author extends React.Component {
   font-size: small;
   color: white;
 `;
+
         return (
             <Container fluid>
                 <Row>
@@ -88,7 +89,12 @@ class Block extends React.Component {
         const ColWrapper = styled(Col)`
 padding: 3rem;
   box-shadow: 0 0 15px 50px black;
+  @media (min-width: 768px) { 
   background: black;
+  }
+  @media (max-width: 767.98px) {
+  text-shadow: -3px -3px 3px #000, 3px -3px 3px #000, -3px 3px 3px #000, 3px 3px 3px #000;
+  }
 `;
 
         return (<Wrapper>
@@ -152,15 +158,15 @@ export default class App extends React.Component {
         return (
             <div>
                 <Logo img={image_main}/>
-                <Block img={image} right>
+                <Block img={image}>
                     <h1>TEST DESCRIPTION</h1>
                     <p>{text}</p>
                 </Block>
-                <Block img={image2}>
+                <Block img={image2} left>
                     <h1>Hello joppa</h1>
                     <p>{text}</p>
                 </Block>
-                <Block img={image3} left>
+                <Block img={image3} right>
                     <h1>TEST DESCRIPTION 2</h1>
                     <p>{text}</p>
                 </Block>
