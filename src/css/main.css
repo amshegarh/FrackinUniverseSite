@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "Starbound Font";
+    src: url("../fonts/starbound-font.ttf") format("truetype");
+}
+
+body {
+    font-family: "Starbound Font", serif;
+    color: #f1f1f1;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.3em;
+    background-color: black;
+}
+
+a {
+    color: #dde9ff;
+}
+
+a:visited {
+    color: #a5b6e7;
+}
+
+a:active, a:hover {
+    color: #ffffff;
+}
